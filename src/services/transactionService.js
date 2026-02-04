@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_URL = "http://localhost:8080/api/transactions";
+const API_URL = "https://money-manager-backend-production-e85d.up.railway.app/api/transactions";
 
 // 1. Get all
 export const getTransactions = () => axios.get(API_URL);
