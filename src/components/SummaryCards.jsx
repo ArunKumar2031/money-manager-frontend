@@ -21,7 +21,7 @@ const SummaryCards = ({ income = 0, expense = 0, balance = 0 }) => {
       amount: income,
       icon: <FaArrowUp />,
       color: "from-[#121418] to-[#121418]",
-      accent: "text-emerald-500 bg-emerald-500/10",
+      accent: "text-emerald-500 bg-emerald-500/10",  
       border: "border-emerald-500/20",
       subtitle: "Total Revenue"
     },
