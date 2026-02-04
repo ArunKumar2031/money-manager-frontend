@@ -26,7 +26,7 @@ Money Manager is a sophisticated personal and business financial tracking applic
 - **Animations**: Framer Motion
 - **State Management**: React Hooks (useState, useMemo, useEffect)
 - **Notifications**: React Hot Toast
-- **Backend (Required)**: Node.js / Express
+- **Backend (Required)**: Spring Boot 
 - **Database**: MongoDB Atlas
 
 ---
