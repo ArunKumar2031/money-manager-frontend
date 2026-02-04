@@ -1,16 +1,47 @@
-# React + Vite
+# 💰 Money Manager - Financial Intelligence Hub
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Money Manager is a sophisticated personal and business financial tracking application. It allows users to record transactions, manage assets across different accounts, and visualize spending habits through dynamic time-series analytics.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Key Features
 
-## React Compiler
+- **Triple-Entry Tracking**: Seamlessly manage **Income**, **Expenses**, and **Account Transfers**.
+- **Dynamic Analytics**: Toggle between **Weekly**, **Monthly**, and **Yearly** spending reports.
+- **Asset Management**: Track liquidity across multiple accounts (Bank, Cash, Savings).
+- **Smart Logic**: 
+  - **12-Hour Grace Period**: Edits and deletions are only permitted within 12 hours of record creation.
+  - **Categorization**: Automatic grouping by category (Food, Fuel, Medical, etc.).
+  - **Divisions**: Separate "Office" and "Personal" finances with a single click.
+- **Advanced Filtering**: Filter history by Date Range, Division, or Category.
+- **Premium UI/UX**: Fully responsive Dark/Light mode interface built with Tailwind CSS and Framer Motion.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend**: React.js
+- **Styling**: Tailwind CSS
+- **Icons**: React Icons (Fa)
+- **Animations**: Framer Motion
+- **State Management**: React Hooks (useState, useMemo, useEffect)
+- **Notifications**: React Hot Toast
+- **Backend (Required)**: Node.js / Express
+- **Database**: MongoDB Atlas
+
+---
+
+## 📂 Project Structure
+
+```text
+src/
+├── components/
+│   ├── Dashboard.jsx        # Main Hub & Timeframe Logic
+│   ├── SummaryCards.jsx     # Financial Overview (Liquidity/Inflow/Outflow)
+│   ├── ExpenseChart.jsx     # Visual Analytics (Weekly/Monthly/Yearly)
+│   ├── TransactionList.jsx  # History & 12h Lock Logic
+│   ├── TransactionModal.jsx # Entry Form (Income/Expense/Transfer)
+│   └── ThemeToggle.jsx      # Dark Mode Switcher
+├── services/
+│   └── transactionService.js # API Communication Layer
+└── App.js                   # Application Entry Point
